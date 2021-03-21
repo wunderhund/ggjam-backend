@@ -33,10 +33,10 @@ services:
       database__connection__password: supersecret
       database__connection__database: db
       storage__active: s3
-      storage__s3__accessKeyId: ***REMOVED***
-      storage__s3__secretAccessKey: ***REMOVED***
-      storage__s3__region: us-west-2
-      storage__s3__bucket: ggjam-content.craigabutler.com
+      storage__s3__accessKeyId: ${GGJAM_S3_KEY}
+      storage__s3__secretAccessKey: ${GGJAM_S3_SECRET}
+      storage__s3__region: ${GGJAM_S3_REGION}
+      storage__s3__bucket: ${GGJAM_S3_BUCKET}
 
 networks:
   # The network created here needs to match the network in the gatsby frontend
