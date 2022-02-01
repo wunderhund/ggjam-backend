@@ -40,5 +40,5 @@ services:
 
 networks:
   # The network created here needs to match the network in the gatsby frontend
-  # or the frontend will not be able to talk to Drupal
+  # or the frontend will not be able to talk to Ghost.
   ggjam:
