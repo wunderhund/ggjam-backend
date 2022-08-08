@@ -19,6 +19,7 @@ services:
 
   ghost:
     build: .
+    hostname: ghost
     ports:
       - 2368:2368
     networks:
